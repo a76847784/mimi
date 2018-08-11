@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   <com.sdust.im.view.TitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:orientation="horizontal"
+       android:padding="1dip" >
+
+      <ImageView
+          android:id="@+id/reg_photo_iv_userphoto1"
+          android:layout_width="120dip"
+          android:layout_height="120dip"
+          android:layout_marginLeft="30dip"
+          android:background="@drawable/bg_reg_userhead"
+          android:padding="6dip"
+          android:src="@drawable/ic_common_def_header" />
+
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:layout_marginLeft="10dip"
+          android:layout_weight="1"
+          android:orientation="vertical"
+          >
+
+         <TextView
+             android:id="@+id/user_name1"
+             android:layout_width="150dip"
+             android:layout_height="fill_parent"
+             android:layout_weight="1"
+             android:gravity="bottom|left"
+             android:text="姓名"
+             android:textSize="18sp"
+             android:textStyle="bold" />
+         <TextView
+             android:id="@+id/user_account"
+             android:layout_width="150dip"
+             android:layout_height="fill_parent"
+             android:layout_weight="1"
+             android:gravity="center_vertical|left"
+             android:text="帐号"
+             android:textSize="18sp"
+             android:textStyle="bold" />
+
+      </LinearLayout>
+   </LinearLayout>
+</LinearLayout>

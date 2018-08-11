@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_normal"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/reg_header"
+        layout="@layout/include_header" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/reg_header"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ViewFlipper
+                android:id="@+id/reg_vf_viewflipper1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:flipInterval="1000"
+                android:persistentDrawingCache="animation" >
+
+                <include
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    layout="@layout/include_similarity_photo" />
+            </ViewFlipper>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_header"
+        android:background="@drawable/bg_topbar_shadow"
+        android:focusable="true" />
+
+</RelativeLayout>
